@@ -3,6 +3,7 @@ package com.cicekSepeti.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
 
 public class HomePage {
 
@@ -19,5 +20,12 @@ public class HomePage {
     public ResultPage searchItem(){
         driver.findElement(searchBox).sendKeys("saksı", Keys.ENTER);
         return new ResultPage(driver);
+    }
+
+    public LoginPage goLoginPage(){
+        Actions action = new Actions(driver);
+        action.moveToElement(driver.findElement(By.xpath("(//span[@class='user-menu__title'])[2]"))).perform();
+        driver.findElement(By.xpath("(//span[@class='users-process-list__text'])[1]")).click();
+        return new LoginPage(driver);
     }
 }

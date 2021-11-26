@@ -21,7 +21,7 @@ public class BaseTest {
 
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver(options);
-        wait = new WebDriverWait(driver,  10);
+        WebDriverWait wait = new WebDriverWait(driver,  10);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("http://www.ciceksepeti.com/");
