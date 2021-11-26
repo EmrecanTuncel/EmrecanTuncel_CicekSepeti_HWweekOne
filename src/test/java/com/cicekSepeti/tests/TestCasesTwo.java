@@ -3,11 +3,9 @@ package com.cicekSepeti.tests;
 import com.cicekSepeti.pages.HomePage;
 import com.cicekSepeti.pages.LoginPage;
 import com.cicekSepeti.pages.ResultPage;
-import org.junit.Assert;
+
 import org.junit.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
+
 
 public class TestCasesTwo extends BaseTest {
 
