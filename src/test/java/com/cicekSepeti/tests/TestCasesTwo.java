@@ -15,5 +15,12 @@ public class TestCasesTwo extends BaseTest {
         ResultPage resultPage = homePage.searchItem(); // Ürün arama
         resultPage.checkControlPageLoaded(); // yeteri kadar scroll yaıldığında 2. sayfa yükleniyor ve URL de gözüküyor mu?
     }
+   /* @Test
+    public void newPage() throws InterruptedException {
+        HomePage homePage = new HomePage(driver);
+        homePage.closeInfoBoxes();// Pop-Up'ların kapatılması
+        ResultPage resultPage = homePage.searchItem(); // Ürün arama
+        resultPage.checkControlPageLoaded(); // yeteri kadar scroll yaıldığında 2. sayfa yükleniyor ve URL de gözüküyor mu?
+    }*/
 
 }
