@@ -13,8 +13,8 @@ public class TestCasesTwo extends BaseTest {
     public void forgatMyPassword() throws InterruptedException {
         HomePage homePage = new HomePage(driver);
         homePage.closeInfoBoxes();// Pop-Up'ların kapatılması
-        LoginPage loginPage = homePage.goLoginPage();
-        loginPage.checkSifremiUnuttum();
+        LoginPage loginPage = homePage.goLoginPage();//login sayfasına ilerle
+        loginPage.checkSifremiUnuttum();//şifremi unuttum butonuna tıkla, mail gir ve onay mesajını kontrol et
     }
 
     @Test
